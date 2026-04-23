@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Основная колба (Сделана ярче - почти белая сверху) -->
+    <path
+        android:pathData="M60,20C48.4,20 39,29.4 39,41C39,48.2 42.5,54.5 47.8,58.3C49.2,59.3 50,60.9 50,62.6V70C50,72.2 51.8,74 54,74H66C68.2,74 70,72.2 70,70V62.6C70,60.9 70.8,59.3 72.2,58.3C77.5,54.5 81,48.2 81,41C81,29.4 71.6,20 60,20Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="60"
+                android:startY="20"
+                android:endX="60"
+                android:endY="74"
+                android:type="linear">
+                <item android:offset="0" android:color="#FFFFFF"/>
+                <item android:offset="1" android:color="#FFF2B3"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Нить накала -->
+    <path
+        android:pathData="M60,35 L60,55 M55,42 L65,42 M55,48 L65,48"
+        android:strokeColor="#FFD700"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+    <!-- Цоколь -->
+    <path android:fillColor="#FFB84D" android:pathData="M52,74h16v4h-16z"/>
+    <path android:fillColor="#FFA31A" android:pathData="M52,78h16v4h-16z"/>
+    <path android:fillColor="#E68A00" android:pathData="M54,82h12v6h-12z"/>
+</vector>

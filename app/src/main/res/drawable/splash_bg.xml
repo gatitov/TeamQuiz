@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base Gradient Background (Matches main_mesh_bg) -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="135"
+                android:startColor="#f0e6ff"
+                android:endColor="#fef9e7" />
+        </shape>
+    </item>
+
+    <!-- Top-Left Blur Blob -->
+    <item android:top="-120dp" android:left="-100dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="300dp"
+                android:startColor="#44c4b5fd"
+                android:endColor="#00ffffff" />
+            <size android:width="400dp" android:height="400dp" />
+        </shape>
+    </item>
+
+    <!-- Top-Right Blur Blob -->
+    <item android:top="50dp" android:right="-80dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="250dp"
+                android:startColor="#44fbcfe8"
+                android:endColor="#00ffffff" />
+            <size android:width="350dp" android:height="350dp" />
+        </shape>
+    </item>
+
+    <!-- Bottom-Left Blur Blob -->
+    <item android:bottom="100dp" android:left="-60dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="250dp"
+                android:startColor="#33a5f3fc"
+                android:endColor="#00ffffff" />
+            <size android:width="350dp" android:height="350dp" />
+        </shape>
+    </item>
+
+    <!-- Bottom-Right Blur Blob -->
+    <item android:bottom="-100dp" android:right="-100dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="300dp"
+                android:startColor="#33bbf7d0"
+                android:endColor="#00ffffff" />
+            <size android:width="400dp" android:height="400dp" />
+        </shape>
+    </item>
+</layer-list>

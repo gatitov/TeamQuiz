@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Цвета из твоего CSS (:root) -->
+    <color name="white">#FFFFFF</color>
+    <color name="background">#FFFFFF</color>
+    <color name="primary">#030213</color>
+    <color name="muted">#ECECF0</color>
+    <color name="muted_foreground">#717182</color>
+    <color name="accent">#E9EBEF</color>
+    <color name="destructive">#D4183D</color>
+
+    <!-- Алиасы для разметки (чтобы было удобнее) -->
+    <color name="bg_main">@color/background</color>
+    <color name="primary_text">@color/primary</color>
+    <color name="secondary_text">@color/muted_foreground</color>
+
+    <!-- Фиолетовый акцент (из дизайна) -->
+    <color name="accent_purple">#9087E5</color>
+
+    <!-- Цвета категорий (пастельные) -->
+    <color name="cat_science_bg">#E1F3FF</color>
+    <color name="cat_history_bg">#FFEBF0</color>
+    <color name="cat_geography_bg">#E1F7E3</color>
+    <color name="cat_arts_bg">#FFF4E0</color>
+
+    <!-- Градиент кнопки (Start Quiz) -->
+    <color name="gradient_start">#9D50BB</color>
+    <color name="gradient_end">#E459BD</color>
+</resources>

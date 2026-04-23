@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Базовый градиент на весь экран -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="135"
+                android:startColor="#f0e6ff"
+                android:endColor="#fef9e7" />
+        </shape>
+    </item>
+
+    <!-- Верхнее левое пятно (Фиолетовое) -->
+    <item android:top="-80dp" android:left="-80dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="350dp"
+                android:startColor="#33c4b5fd"
+                android:endColor="#00ffffff" />
+            <size android:width="500dp" android:height="500dp" />
+        </shape>
+    </item>
+
+    <!-- Верхнее правое пятно (Розовое) -->
+    <item android:top="60dp" android:right="-100dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="300dp"
+                android:startColor="#33fbcfe8"
+                android:endColor="#00ffffff" />
+            <size android:width="400dp" android:height="400dp" />
+        </shape>
+    </item>
+
+    <!-- Нижнее левое пятно (Голубое) -->
+    <item android:bottom="120dp" android:left="-80dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="300dp"
+                android:startColor="#22a5f3fc"
+                android:endColor="#00ffffff" />
+            <size android:width="450dp" android:height="450dp" />
+        </shape>
+    </item>
+
+    <!-- Нижнее правое пятно (Зеленое) -->
+    <item android:bottom="-60dp" android:right="-80dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="350dp"
+                android:startColor="#22bbf7d0"
+                android:endColor="#00ffffff" />
+            <size android:width="500dp" android:height="500dp" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Фон полоски (пустая часть) -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#66FFFFFF" />
+            <corners android:radius="999dp" />
+        </shape>
+    </item>
+
+    <!-- Заполняющая часть (Прогресс) -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient
+                    android:angle="0"
+                    android:endColor="#9D8FFF"
+                    android:startColor="#7B68EE"
+                    android:type="linear" />
+                <corners android:radius="999dp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

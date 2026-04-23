@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Парящие фигуры (Floating Shapes) -->
+    <View
+        android:id="@+id/shape1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="40dp"
+        android:alpha="0.2"
+        android:background="@drawable/shape_cube"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/shape2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="60dp"
+        android:alpha="0.2"
+        android:background="@drawable/shape_sphere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/shape3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginStart="30dp"
+        android:alpha="0.2"
+        android:background="@drawable/shape_cube"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/shape4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="250dp"
+        android:layout_marginEnd="50dp"
+        android:alpha="0.2"
+        android:background="@drawable/shape_sphere"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Центральный контент -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Контейнер для иконки -->
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <!-- Фоновый круг свечения (Теперь очень нежный и прозрачный) -->
+            <View
+                android:id="@+id/lightbulb_glow"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bulb_glow_soft" />
+
+            <!-- Группа лучиков и лампочки для синхронной анимации -->
+            <FrameLayout
+                android:id="@+id/bulb_group"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <!-- Лучики (Яркие) -->
+                <ImageView
+                    android:id="@+id/lightbulb_rays"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_rays_only"
+                    android:alpha="1.0" />
+
+                <!-- Сама лампочка (Яркая) -->
+                <ImageView
+                    android:id="@+id/lightbulb_main"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_bulb_only" />
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-black"
+            android:text="QuizMind"
+            android:textColor="#3D1E6D"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:letterSpacing="-0.02" />
+
+        <ProgressBar
+            android:id="@+id/splash_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="280dp"
+            android:layout_height="6dp"
+            android:layout_marginTop="60dp"
+            android:progressDrawable="@drawable/progress_fill"
+            android:max="100"
+            android:progress="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Loading your challenges..."
+                android:textColor="#3D1E6D"
+                android:textSize="16sp"
+                android:alpha="0.7"
+                android:letterSpacing="0.05" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Основная подложка: очень мягкий светлый тон без обводок -->
+    <item>
+        <shape>
+            <solid android:color="#FBFAFF" />
+            <corners android:radius="48dp" />
+        </shape>
+    </item>
+
+    <!-- Мягкий фоновый блик в верхней левой части (30% 20%) -->
+    <item>
+        <shape>
+            <gradient
+                android:type="radial"
+                android:gradientRadius="450dp"
+                android:centerX="0.3"
+                android:centerY="0.2"
+                android:startColor="#1AC4B5FD"
+                android:endColor="@android:color/transparent" />
+            <corners android:radius="48dp" />
+        </shape>
+    </item>
+
+    <!-- Дополнительный центральный мягкий блик для плавного перехода под иконкой -->
+    <item>
+        <shape>
+            <gradient
+                android:type="radial"
+                android:gradientRadius="300dp"
+                android:centerX="0.5"
+                android:centerY="0.5"
+                android:startColor="#0D8B5CF6"
+                android:endColor="@android:color/transparent" />
+            <corners android:radius="48dp" />
+        </shape>
+    </item>
+</layer-list>
